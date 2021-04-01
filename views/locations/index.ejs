@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+</head>
+<body>
+    <h1>All Locations</h1>
+    <div>
+        <a href="/locations/new">Add a new Workplace</a>
+    </div>
+    <ul>
+        <% for (let location of locations){%>
+            <li><a href="/locations/<%= location._id %>"><%= location.title %></a></li>
+        <% }%>
+    </ul>
+</body>
+</html>
